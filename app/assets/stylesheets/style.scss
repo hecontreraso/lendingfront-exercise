@@ -1,11 +1,11 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #888;
-    line-height: 30px;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
 }
 
 strong { font-weight: 500; }
@@ -13,22 +13,22 @@ strong { font-weight: 500; }
 a, a:hover, a:focus {
 	color: #19b9e7;
 	text-decoration: none;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
 h1, h2 {
 	margin-top: 10px;
 	font-size: 38px;
-    font-weight: 100;
-    color: #555;
-    line-height: 50px;
+  font-weight: 100;
+  color: #555;
+  line-height: 50px;
 }
 
 h3 {
 	font-size: 22px;
-    font-weight: 300;
-    color: #555;
-    line-height: 30px;
+  font-weight: 300;
+  color: #555;
+  line-height: 30px;
 }
 
 img { max-width: 100%; }
@@ -44,10 +44,10 @@ img { max-width: 100%; }
 	padding: 16px 20px 0 20px;
 	background: #19b9e7;
 	font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    color: #fff;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #fff;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
 .btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active { outline: 0; opacity: 0.6; color: #fff; }
 
@@ -59,10 +59,10 @@ img { max-width: 100%; }
 	background: rgba(0, 0, 0, 0.3);
 	border: 1px solid #fff;
 	font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    color: #fff;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+  font-weight: 300;
+  line-height: 16px;
+	color: #fff;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
 .btn-link-2:hover, .btn-link-2:focus, 
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
@@ -102,7 +102,7 @@ ul.navbar-nav {
 
 .navbar-brand {
 	width: 350px;
-	background: url(logo.png) left center no-repeat;
+	background: url(http://i.imgur.com/KFjZ3uZ.png) left center no-repeat;
 	text-indent: -99999px;
 }
 
@@ -172,10 +172,6 @@ ul.navbar-nav {
 	text-align: left;
 }
 
-form .form-bottom textarea {
-	height: 100px;
-}
-
 form .form-bottom button.btn {
 	min-width: 105px;
 }
@@ -212,13 +208,10 @@ form.registration-form fieldset {
 	
 	.form-bottom { padding-bottom: 25px; }
 	form .form-bottom button.btn { margin-bottom: 5px; }
-
 }
 
 @media (max-width: 415px) {
-	
 	h1, h2 { font-size: 32px; }
-
 }
 
 

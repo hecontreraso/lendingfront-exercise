@@ -1,0 +1,19 @@
+$('.form-top .form-top-left h3').text('Your result is ready');
+$('.form-top .form-top-left p').html('The status of your loan is <strong><%= result %></strong>');
+
+$('.form-top i').removeClass('fa-user');
+
+<% 
+	icon = case result
+ 	when 'Declined'
+ 		'fa-ban'
+ 	when 'Undecided'
+ 		'fa-clock-o'
+ 	when 'Approved'
+ 		'fa-check'
+	end
+%>
+
+$('.form-top i').addClass('<%= icon %>');
+
+$('.form-bottom').remove();

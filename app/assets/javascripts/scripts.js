@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     /*
         Fullscreen background
     */
-    $.backstretch("assets/backgrounds/1.jpg");
+    $.backstretch("http://i.imgur.com/MolNwGH.jpg");
     
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$.backstretch("resize");
@@ -25,20 +25,27 @@ jQuery(document).ready(function() {
     $('.registration-form .btn-next').on('click', function() {
     	var parent_fieldset = $(this).parents('fieldset');
     	var next_step = true;
+
+      if ($('#form-requested-amount')[0].checkValidity() == false){
+        $('.error-message').css('display', 'block');
+        $('.error-message strong').text('Please check the requested amount. It can\'t be greater than $1\'000.000');
+        next_step = false;
+      }
     	
     	parent_fieldset.find('input[type="text"], input[type="number"], input[type="email"]').each(function() {
-    		if( $(this).val() == "" ) {
+		    if( $(this).val() == "" ) {
           $(this).addClass('input-error');
           $('.error-message').css('display', 'block');
+          $('.error-message strong').text('There\'s an error in the form. Please check the fields marked in red');
           next_step = false;
         }
         else {
           $(this).removeClass('input-error');
-    			$('.error-message').css('display', 'none');
     		}
     	});
     	
     	if( next_step ) {
+        $('.error-message').css('display', 'none');
     		parent_fieldset.fadeOut(400, function() {
 	    		$(this).next().fadeIn();
 	    	});

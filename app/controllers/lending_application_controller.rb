@@ -1,16 +1,27 @@
 class LendingApplicationController < ApplicationController
 	def decide_if_approved
-		requested_amount = lending_params[:requested_amount]
-		msg = ''
+		requested_amount = lending_params[:requested_amount].to_i
+		result = ''
 
 		if requested_amount > 50000
-			msg = 'Declined'
+			result = 'Declined'
 		elsif requested_amount == 50000
-			msg = 'Undecided'
+			result = 'Undecided'
 		elsif requested_amount > 0 && requested_amount < 50000
-			msg = 'Approved'
+			result = 'Approved'
+		else
+			head 400
+			return
 		end
 
+    respond_to do |format|
+    	format.js {
+    		render 'index',
+    		locals: {
+    			result: result
+    		}
+  		}
+    end
 	end
 
 	def lending_params
