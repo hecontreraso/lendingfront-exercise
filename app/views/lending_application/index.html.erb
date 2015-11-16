@@ -1,0 +1,182 @@
+<!-- Top menu -->
+<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Lending Front</a>
+		</div>
+	</div>
+</nav>
+
+<!-- Top content -->
+<div class="top-content">
+  <div class="inner-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text">
+          <h1><strong>Lending Front</strong> application form</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 form-box">
+        	
+        	<form role="form" action="" method="post" class="registration-form">
+        		<fieldset>
+            	<div class="form-top">
+            		<div class="form-top-left">
+            			<h3>Step 1 / 3</h3>
+              		<p>Tell us about your business:</p>
+            		</div>
+            		<div class="form-top-right">
+            			<i class="fa fa-building"></i>
+            		</div>
+              </div>
+              <div class="form-bottom">
+                <p class="error-message"><strong>There's an error in the form. Please check the fields marked in red</strong></p>
+            	  <div class="form-group">
+              		<label class="sr-only" for="form-tax-id">Tax ID</label>
+                	<input type="text" maxlength="10" name="form-tax-id" placeholder="Tax ID" class="form-first-name form-control" id="form-first-name">
+                </div>
+                <div class="form-group">
+                	<label class="sr-only" for="form-business-name">Business name</label>
+                	<input type="text" maxlength="10" name="form-business-name" placeholder="Business name" class="form-last-name form-control" id="form-business-name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-business-address">Business address</label>
+                  <input type="text" maxlength="10" name="form-business-address" placeholder="Business address" class="form-business-address form-control" id="form-business-address">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-business-city">City</label>
+                  <input type="text" maxlength="10" name="form-business-city" placeholder="City" class="form-business-city form-control" id="form-business-city">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-business-state">State</label>
+                  <input type="text" maxlength="10" name="form-business-state" placeholder="State" class="form-business-state form-control" id="form-business-state">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-business-postal-code">Postal code</label>
+                  <input type="text" maxlength="10" name="form-business-postal-code" placeholder="Postal code" class="form-business-postal-code form-control" id="form-business-postal-code">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-requested-amount">Requested amount (in USD)</label>
+                  <input type="number" min="1" max="1000000" name="form-requested-amount" placeholder="Requested amount (in USD)" class="form-requested-amount form-control" id="form-requested-amount">
+                </div>
+                <button type="button" class="btn btn-next">Next</button>
+              </div>
+            </fieldset>
+          
+            <fieldset>
+            	<div class="form-top">
+            		<div class="form-top-left">
+            			<h3>Step 2 / 3</h3>
+              		<p>Tell us about the owner of the business:</p>
+            		</div>
+            		<div class="form-top-right">
+            			<i class="fa fa-user"></i>
+            		</div>
+              </div>
+              <div class="form-bottom">
+                <p class="error-message"><strong>There's an error in the form. Please check the fields marked in red</strong></p>
+                <div class="form-group">
+                	<label class="sr-only" for="form-social-security-number">Social security number</label>
+              	  <input type="text" maxlength="12" name="form-social-security-number" placeholder="Social security number" class="form-social-security-number form-control" id="form-social-security-number">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-owner-name">Name</label>
+                  <input type="text" maxlength="64" name="form-owner-name" placeholder="Name" class="form-owner-name form-control" id="form-owner-name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-email">Email</label>
+                  <input type="email" maxlength="64" name="form-email" placeholder="Email" class="form-email form-control" id="form-email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-owner-address">Address</label>
+                  <input type="text" maxlength="64" name="form-owner-address" placeholder="Address" class="form-owner-address form-control" id="form-owner-address">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-owner-city">City</label>
+                  <input type="text" maxlength="32" name="form-owner-city" placeholder="City" class="form-owner-city form-control" id="form-owner-city">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-owner-state">State</label>
+                  <input type="text" maxlength="32" name="form-owner-state" placeholder="State" class="form-owner-state form-control" id="form-owner-state">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-owner-postal-code">Postal-code</label>
+                  <input type="text" maxlength="10" name="form-owner-postal-code" placeholder="Postal-code" class="form-owner-postal-code form-control" id="form-owner-postal-code">
+                </div>
+
+                <button type="button" class="btn btn-previous">Previous</button>
+                <button type="button" class="btn btn-next">Next</button>
+              </div>
+            </fieldset>
+          
+            <fieldset>
+            	<div class="form-top">
+            		<div class="form-top-left">
+            			<h3>Step 3 / 3</h3>
+              		<p>Social media profiles:</p>
+            		</div>
+            		<div class="form-top-right">
+            			<i class="fa fa-twitter"></i>
+            		</div>
+              </div>
+              <div class="form-bottom">
+                <p class="error-message"><strong>There's an error in the form. Please check the fields marked in red</strong></p>
+              	<div class="form-group">
+            		  <label class="sr-only" for="form-facebook">Facebook</label>
+                	<input type="text" name="form-facebook" placeholder="Facebook..." class="form-facebook form-control" id="form-facebook">
+                </div>
+                <div class="form-group">
+                	<label class="sr-only" for="form-twitter">Twitter</label>
+                	<input type="text" name="form-twitter" placeholder="Twitter..." class="form-twitter form-control" id="form-twitter">
+                </div>
+                <div class="form-group">
+                	<label class="sr-only" for="form-google-plus">Google plus</label>
+                	<input type="text" name="form-google-plus" placeholder="Google plus..." class="form-google-plus form-control" id="form-google-plus">
+                </div>
+                <button type="button" class="btn btn-previous">Previous</button>
+                <button type="submit" class="btn">Sign me up!</button>
+              </div>
+            </fieldset>      
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+<script type="text/javascript">
+  // initialize the autofill functionality in the form
+  function initializeAutocomplete() {
+    var input = document.getElementById('form-business-address');
+    new google.maps.places.Autocomplete(input, {
+      componentRestrictions: {country: "us"}
+    });
+
+    var input = document.getElementById('form-business-city');
+    new google.maps.places.Autocomplete(input, {
+      types: ['(cities)'],
+      componentRestrictions: {country: "us"}
+    });
+
+    var input = document.getElementById('form-business-state');
+    new google.maps.places.Autocomplete(input, {
+      types: ['(regions)'],
+      componentRestrictions: {country: "us"}
+    });
+
+    var input = document.getElementById('form-business-postal-code');
+    new google.maps.places.Autocomplete(input, {
+      types: ['(regions)'],
+      componentRestrictions: {country: "us"}
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initializeAutocomplete);  
+</script>
